@@ -61,15 +61,29 @@ export default function Work() {
                   <li key={t}>{t}</li>
                 ))}
               </ul>
-              {p.repo && (
-                <a
-                  className="btn-ghost project-repo"
-                  href={p.repo}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  View Repository <span className="arrow">↗</span>
-                </a>
+              {(p.repo || p.demo) && (
+                <div className="project-links">
+                  {p.repo && (
+                    <a
+                      className="btn-ghost"
+                      href={p.repo}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      View Repository <span className="arrow">↗</span>
+                    </a>
+                  )}
+                  {p.demo && (
+                    <a
+                      className="btn-ghost"
+                      href={p.demo}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Watch Demo <span className="arrow">↗</span>
+                    </a>
+                  )}
+                </div>
               )}
             </motion.article>
           ))}

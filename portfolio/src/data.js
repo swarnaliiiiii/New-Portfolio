@@ -27,6 +27,7 @@ export const PROJECTS = [
     ],
     description:
       'Investment advisor platform that processes real-time financial, macroeconomic, and geopolitical data from 15+ sources to answer free-form investor queries with structured insights and forecasts. Layered backend separates deterministic data-fetching pipelines from LLM reasoning agents — enforced through import-linter contracts and strict execution-budget controls. Implements Monte Carlo forecasting, Gemini embedding–based vector search, persistent personalization memory, and async event-classification pipelines.',
+    demo: 'https://www.loom.com/share/fbe8e216d1f94e6bbc57acc312c9d615',
     featured: false,
   },
   {
@@ -69,6 +70,7 @@ export const PROJECTS = [
     description:
       'Distributed, policy-driven rate-limiting engine supporting per-tenant, per-route, per-user, and global limits. DAG-based decision tree with short-circuit evaluation, progressive penalty escalation, abuse detection, and sliding-window limits.',
     repo: 'https://github.com/swarnaliiiiii/rate_limiter',
+    demo: 'https://www.loom.com/share/cb3f535a422e47cebb6937f17f127235',
     featured: true,
   },
 ];

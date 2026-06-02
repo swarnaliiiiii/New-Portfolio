@@ -393,7 +393,10 @@
   border-radius: 999px;
 }
 
-.project-repo {
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem 1.75rem;
   margin-top: 1.25rem;
 }
 
